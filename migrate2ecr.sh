@@ -1,7 +1,7 @@
 #!/bin/bash
 
-target=public.ecr.aws/t6y8f1l2
-containers="nirmata/kubectl nirmata/nirmata-cni-installer nirmata/nirmata-kube-installer nirmata/nirmata-host-agent nirmata/hostpath-provisioner"
+target=public.ecr.aws/some-id
+containers="Your container list"
 
 aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws
 
